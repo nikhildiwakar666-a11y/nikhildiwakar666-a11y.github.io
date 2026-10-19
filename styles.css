@@ -270,6 +270,20 @@ a {
   transform: translateY(-2px);
 }
 
+.btn-resume {
+  background-color: rgba(255, 77, 46, 0.08);
+  border-color: rgba(255, 77, 46, 0.35);
+  color: #ffffff;
+}
+
+.btn-resume:hover {
+  background-color: rgba(255, 77, 46, 0.18);
+  border-color: var(--accent-primary);
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(255, 77, 46, 0.25);
+  transform: translateY(-2px);
+}
+
 .btn-ghost {
   background: transparent;
   color: var(--text-secondary);

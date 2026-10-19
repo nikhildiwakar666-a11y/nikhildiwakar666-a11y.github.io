@@ -41,6 +41,7 @@ Designed for **Nikhil Diwakar**, a B.Tech Computer Science Engineering student b
 portfolio/
 ├── assets/
 │   └── pn-neet-diw-logo.jpg # Verified PN-Neet-Diw project logo
+├── Nikhil_resume.pdf        # Resume PDF file
 ├── index.html               # Semantic HTML5 markup
 ├── styles.css               # Design system with dark grid & orange-red accent
 ├── script.js                # Accessible mobile drawer & scroll-spy
