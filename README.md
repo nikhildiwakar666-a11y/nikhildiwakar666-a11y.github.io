@@ -11,6 +11,7 @@ Designed for **Nikhil Diwakar**, a B.Tech Computer Science Engineering student b
 - **Name:** Nikhil Diwakar
 - **Education:** B.Tech in Computer Science Engineering (Currently pursuing)
 - **Location:** Kanpur, Uttar Pradesh, India
+- **Email:** [nikhildiwakar666@gmail.com](mailto:nikhildiwakar666@gmail.com)
 - **LinkedIn Profile:** [https://www.linkedin.com/in/nikhil-diwakar-4828482a9](https://www.linkedin.com/in/nikhil-diwakar-4828482a9)
 - **GitHub Profile:** [https://github.com/nikhildiwakar666-a11y](https://github.com/nikhildiwakar666-a11y)
 - **Featured Project:** [PN-Neet-Diw](https://github.com/nikhildiwakar666-a11y/PN-Neet-Diw)
