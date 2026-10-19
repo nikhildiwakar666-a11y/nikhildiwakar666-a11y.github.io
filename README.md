@@ -21,15 +21,17 @@ Designed for **Nikhil Diwakar**, a B.Tech Computer Science Engineering student b
 
 ## 🎨 Visual & Design System
 
-- **Dark Theme:** Dark charcoal / near-black background (`#090b0e`), technical grid background overlay, and restrained modern orange-red accent (`#ff4d2e`).
-- **Abstract Wireframe Hero:** Code-based SVG wireframe geometry illustration with coordinate rings, glowing nodes, and subtle rotational ambient movement.
+- **Blue Theme:** Deep midnight navy background (`#060b18` / `#080f22`), soft non-intrusive cyan/blue ambient lighting, and rich cobalt glass cards.
+- **Accent Palette:** Electric blue (`#38bdf8`), vibrant cyan (`#06b6d4`, `#22d3ee`), and soft sky blue (`#7dd3fc`).
+- **Strict Color Rules:** Completely free of orange, red, brown, or warm colors.
+- **Hero Presentation:** Modern asymmetric split-grid with developer profile terminal component.
 - **Typography:** Refined typography using *Plus Jakarta Sans* and *JetBrains Mono*.
-- **Card Design:** Glass-style cards with backdrop blur, fine borders, and smooth lift hover effects.
-- **Project Showcase:** Features project branding badge with repository logo (`assets/pn-neet-diw-logo.jpg`).
+- **Resume Integration:** Dedicated "Download Resume" action button linking directly to `Nikhil_resume.pdf`.
+- **Project Showcase:** Features verified project logo (`assets/pn-neet-diw-logo.jpg`) with public repository badge.
 - **Accessibility:**
   - Semantic HTML5 structure (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`)
   - Skip-to-content keyboard link
-  - Clear `:focus-visible` outline rings with accessible contrast
+  - Clear `:focus-visible` cyan outline rings with accessible contrast
   - Supports `prefers-reduced-motion` for motion-sensitive users
   - Responsive mobile drawer navigation with ARIA attributes and keyboard Escape key dismissal
 

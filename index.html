@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nikhil Diwakar - B.Tech Computer Science Engineering student based in Kanpur, Uttar Pradesh, India. Portfolio featuring coursework, learning interests, and projects.">
+  <meta name="description" content="Portfolio of Nikhil Diwakar - B.Tech Computer Science Engineering student from Kanpur, Uttar Pradesh, India. Learning through coursework and building practical projects.">
   <meta name="author" content="Nikhil Diwakar">
-  <title>Nikhil Diwakar | Computer Science Engineering Student</title>
+  <title>Nikhil Diwakar | Computer Science Engineering Portfolio</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23090b0e'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='800' font-size='42' fill='%23ff4d2e'>ND</text></svg>">
+  <!-- Favicon with vibrant blue-cyan monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23081026'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='42' fill='%2338bdf8'>ND</text></svg>">
 
-  <!-- Google Fonts: Space Grotesk / Plus Jakarta Sans & JetBrains Mono -->
+  <!-- Modern Google Fonts: Plus Jakarta Sans for UI & JetBrains Mono for code elements -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -18,48 +18,70 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Accessibility Skip Link -->
+  <!-- Keyboard Accessibility Skip Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Ambient Blue & Cyan Background Lighting (Soft, non-busy) -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-center" aria-hidden="true"></div>
 
   <!-- Sticky Top Navigation -->
   <header class="site-header" id="header">
     <div class="container header-container">
-      <a href="#hero" class="brand-wordmark" aria-label="Nikhil Diwakar - Home">
-        <span class="brand-monogram" aria-hidden="true">ND</span>
-        <span class="brand-name">Nikhil Diwakar</span>
+      <a href="#hero" class="brand-link" aria-label="Nikhil Diwakar - Home">
+        <div class="brand-monogram" aria-hidden="true">
+          <span>ND</span>
+        </div>
+        <div class="brand-info">
+          <span class="brand-title">Nikhil Diwakar</span>
+          <span class="brand-subtitle">B.Tech CSE</span>
+        </div>
       </a>
 
-      <!-- Desktop Navigation -->
-      <nav class="nav-desktop" aria-label="Primary navigation">
-        <ul class="nav-list">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-          <li><a href="#learning" class="nav-link">Learning</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+      <!-- Desktop Nav -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#education" class="nav-item">Education</a></li>
+          <li><a href="#learning" class="nav-item">Learning</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
         </ul>
       </nav>
 
-      <!-- Desktop Header Actions -->
+      <!-- Header Quick Actions -->
       <div class="header-actions">
+        <a href="Nikhil_resume.pdf" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn btn-sm btn-nav-resume"
+           aria-label="Download Resume (opens in a new tab)">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+
         <a href="https://github.com/nikhildiwakar666-a11y" 
            target="_blank" 
            rel="noopener noreferrer" 
            class="btn btn-sm btn-ghost header-github-btn"
            aria-label="GitHub Profile (opens in new tab)">
-          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true">
             <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
           </svg>
           <span>GitHub</span>
         </a>
 
-        <!-- Mobile Toggle Button -->
+        <!-- Mobile Menu Toggle Button -->
         <button type="button" 
                 class="mobile-menu-toggle" 
                 id="menuToggle" 
                 aria-controls="mobileNav" 
                 aria-expanded="false" 
-                aria-label="Toggle navigation menu">
+                aria-label="Open mobile menu">
           <span class="hamburger-bar"></span>
           <span class="hamburger-bar"></span>
           <span class="hamburger-bar"></span>
@@ -68,13 +90,15 @@
     </div>
 
     <!-- Mobile Drawer Navigation -->
-    <div class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+    <div class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation" hidden>
       <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
-      <div class="mobile-nav-panel">
+      <div class="mobile-nav-drawer">
         <div class="mobile-nav-header">
-          <div class="brand-wordmark">
-            <span class="brand-monogram">ND</span>
-            <span class="brand-name">Nikhil Diwakar</span>
+          <div class="brand-link">
+            <div class="brand-monogram"><span>ND</span></div>
+            <div class="brand-info">
+              <span class="brand-title">Nikhil Diwakar</span>
+            </div>
           </div>
           <button type="button" class="mobile-close-btn" id="menuClose" aria-label="Close navigation menu">&times;</button>
         </div>
@@ -85,125 +109,11 @@
           <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
           <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
         </ul>
-        <div class="mobile-nav-footer">
-          <a href="https://github.com/nikhildiwakar666-a11y" 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="btn btn-primary btn-full">
-            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
-              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-            </svg>
-            <span>GitHub Profile</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <main id="main-content">
-    
-    <!-- 1. Hero Section -->
-    <section class="section hero-section" id="hero">
-      <div class="hero-wireframe-bg" aria-hidden="true">
-        <!-- Abstract wireframe / geometric illustration in SVG -->
-        <svg class="wireframe-graphic" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <radialGradient id="wireframeGlow" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#ff4d2e" stop-opacity="0.18"/>
-              <stop offset="100%" stop-color="#ff4d2e" stop-opacity="0"/>
-            </radialGradient>
-            <linearGradient id="wireframeLine" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#ff4d2e" stop-opacity="0.4"/>
-              <stop offset="50%" stop-color="#ffffff" stop-opacity="0.15"/>
-              <stop offset="100%" stop-color="#ff4d2e" stop-opacity="0.05"/>
-            </linearGradient>
-          </defs>
-          <!-- Ambient Glow Circle -->
-          <circle cx="300" cy="300" r="260" fill="url(#wireframeGlow)"/>
-          
-          <!-- Concentric Coordinate Rings -->
-          <ellipse cx="300" cy="300" rx="240" ry="90" stroke="url(#wireframeLine)" stroke-width="1.2" stroke-dasharray="4 6"/>
-          <ellipse cx="300" cy="300" rx="240" ry="90" stroke="url(#wireframeLine)" stroke-width="1.2" transform="rotate(45 300 300)"/>
-          <ellipse cx="300" cy="300" rx="240" ry="90" stroke="url(#wireframeLine)" stroke-width="1.2" transform="rotate(90 300 300)" stroke-dasharray="3 5"/>
-          <ellipse cx="300" cy="300" rx="240" ry="90" stroke="url(#wireframeLine)" stroke-width="1.2" transform="rotate(135 300 300)"/>
-          
-          <!-- Isometric Polygonal Lattice -->
-          <polygon points="300,140 438,220 438,380 300,460 162,380 162,220" stroke="rgba(255,255,255,0.12)" stroke-width="1.2"/>
-          <line x1="300" y1="140" x2="300" y2="460" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-          <line x1="162" y1="220" x2="438" y2="380" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-          <line x1="162" y1="380" x2="438" y2="220" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-
-          <!-- Accent Points / Glowing Nodes -->
-          <circle cx="300" cy="140" r="4" fill="#ff4d2e"/>
-          <circle cx="438" cy="220" r="3.5" fill="#ff6b4a"/>
-          <circle cx="438" cy="380" r="3.5" fill="#ff4d2e"/>
-          <circle cx="300" cy="460" r="4" fill="#ff4d2e"/>
-          <circle cx="162" cy="380" r="3.5" fill="#ff6b4a"/>
-          <circle cx="162" cy="220" r="3.5" fill="#ff4d2e"/>
-          <circle cx="300" cy="300" r="5" fill="#ff4d2e"/>
-        </svg>
-      </div>
-
-      <div class="container hero-container">
-        
-        <!-- Status Pill & Location -->
-        <div class="hero-meta-row">
-          <div class="status-badge">
-            <span class="status-pulse-dot" aria-hidden="true"></span>
-            <span class="status-badge-text">B.Tech CSE Student</span>
-          </div>
-
-          <div class="location-badge">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
-            <span>Kanpur, Uttar Pradesh, India</span>
-          </div>
-        </div>
-
-        <!-- Main Heading -->
-        <h1 class="hero-heading">
-          Hi, I’m <span class="accent-name">Nikhil Diwakar</span>
-        </h1>
-
-        <!-- Supporting Line -->
-        <p class="hero-supporting">
-          Computer Science Engineering student learning by building practical projects.
-        </p>
-
-        <!-- CTA Action Buttons -->
-        <div class="hero-buttons">
-          <a href="https://github.com/nikhildiwakar666-a11y/PN-Neet-Diw" 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="btn btn-primary"
-             id="hero-explore-btn">
-            <span>Explore My Project</span>
-            <svg class="icon btn-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-
-          <a href="https://github.com/nikhildiwakar666-a11y" 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="btn btn-secondary"
-             id="hero-github-btn">
-            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
-              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-            </svg>
-            <span>GitHub Profile</span>
-          </a>
-
+        <div class="mobile-nav-actions">
           <a href="Nikhil_resume.pdf" 
              target="_blank" 
              rel="noopener noreferrer" 
-             class="btn btn-secondary btn-resume"
-             id="hero-resume-btn"
-             aria-label="Download Nikhil Diwakar's Resume (opens in a new tab)">
+             class="btn btn-secondary btn-full">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <polyline points="7 10 12 15 17 10"></polyline>
@@ -211,106 +121,296 @@
             </svg>
             <span>Download Resume</span>
           </a>
+          <a href="https://github.com/nikhildiwakar666-a11y" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn-primary btn-full">
+            <span>Visit GitHub Profile</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-layout">
+        
+        <!-- Left: Hero Introduction -->
+        <div class="hero-content">
+          <div class="hero-badges">
+            <div class="badge-status">
+              <span class="status-indicator-dot" aria-hidden="true"></span>
+              <span>B.Tech CSE Student</span>
+            </div>
+            <div class="badge-location">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="13" height="13" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Kanpur, Uttar Pradesh, India</span>
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I’m <span class="gradient-text">Nikhil Diwakar</span>
+          </h1>
+
+          <p class="hero-tagline">
+            Computer Science Engineering student learning by building practical projects.
+          </p>
+
+          <p class="hero-description">
+            I explore computing fundamentals through my coursework and apply them directly into code, focusing on structured problem solving and modern web technologies.
+          </p>
+
+          <!-- Action Buttons Group -->
+          <div class="hero-cta-group">
+            <a href="https://github.com/nikhildiwakar666-a11y/PN-Neet-Diw" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-primary btn-glow"
+               id="hero-explore-btn">
+              <span>Explore My Project</span>
+              <svg class="icon btn-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="Nikhil_resume.pdf" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-cyan-outline"
+               id="hero-resume-btn"
+               aria-label="Download Nikhil Diwakar's Resume (PDF opens in a new tab)">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+
+            <a href="https://github.com/nikhildiwakar666-a11y" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-secondary"
+               id="hero-github-btn">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Developer Overview Card -->
+        <div class="hero-display">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-controls">
+                <span class="control-dot dot-cyan"></span>
+                <span class="control-dot dot-blue"></span>
+                <span class="control-dot dot-slate"></span>
+              </div>
+              <span class="terminal-title">nikhil_diwakar.profile</span>
+            </div>
+
+            <div class="terminal-body">
+              <div class="terminal-row">
+                <span class="code-comment">// Verified Student Profile</span>
+              </div>
+              <div class="terminal-row">
+                <span class="code-keyword">const</span> <span class="code-var">student</span> = {
+              </div>
+              <div class="terminal-field">
+                <span class="code-key">name</span>: <span class="code-string">"Nikhil Diwakar"</span>,
+              </div>
+              <div class="terminal-field">
+                <span class="code-key">degree</span>: <span class="code-string">"B.Tech CSE"</span>,
+              </div>
+              <div class="terminal-field">
+                <span class="code-key">status</span>: <span class="code-string">"Currently pursuing"</span>,
+              </div>
+              <div class="terminal-field">
+                <span class="code-key">location</span>: <span class="code-string">"Kanpur, UP, India"</span>,
+              </div>
+              <div class="terminal-field">
+                <span class="code-key">interests</span>: [
+                  <span class="code-array-item">"Computer Science"</span>,
+                  <span class="code-array-item">"Problem Solving"</span>,
+                  <span class="code-array-item">"Web Development"</span>
+                ],
+              </div>
+              <div class="terminal-field">
+                <span class="code-key">featuredProject</span>: <span class="code-string code-highlight">"PN-Neet-Diw"</span>
+              </div>
+              <div class="terminal-row">
+                };
+              </div>
+            </div>
+
+            <div class="terminal-footer">
+              <div class="terminal-status">
+                <span class="terminal-pulse"></span>
+                <span>Active Learner &amp; Builder</span>
+              </div>
+              <a href="https://github.com/nikhildiwakar666-a11y/PN-Neet-Diw" target="_blank" rel="noopener noreferrer" class="terminal-link">
+                <span>View PN-Neet-Diw &rarr;</span>
+              </a>
+            </div>
+          </div>
         </div>
 
       </div>
     </section>
 
-    <!-- 2. About Me Section -->
+    <!-- About Me Section -->
     <section class="section" id="about" aria-labelledby="about-heading">
       <div class="container">
-        <div class="section-tag-row">
-          <span class="section-tag">01 / Profile</span>
-          <h2 class="section-heading" id="about-heading">About Me</h2>
+        
+        <div class="section-title-wrap">
+          <div class="section-badge">
+            <span class="badge-icon">01</span>
+            <span>About Me</span>
+          </div>
+          <h2 class="section-heading" id="about-heading">Background &amp; Focus</h2>
         </div>
 
-        <div class="card glass-card about-card">
-          <div class="about-statement">
-            <p class="about-quote">
-              “I’m Nikhil Diwakar, a B.Tech Computer Science Engineering student from Kanpur, Uttar Pradesh. I’m learning about technology and developing my skills by building projects.”
-            </p>
+        <div class="about-grid">
+          
+          <div class="card glass-card about-main-card">
+            <div class="about-quote-bar"></div>
+            <div class="about-text-content">
+              <p class="about-lead">
+                “I’m Nikhil Diwakar, a B.Tech Computer Science Engineering student from Kanpur, Uttar Pradesh. I’m learning about technology and developing my skills by building projects.”
+              </p>
+              <p class="about-secondary">
+                My approach to software and technology is rooted in understanding fundamentals through university coursework and immediately applying those concepts in practical hands-on repositories.
+              </p>
+            </div>
           </div>
 
-          <div class="about-details-grid">
-            <div class="detail-tile">
-              <span class="detail-key">Program</span>
-              <span class="detail-val">B.Tech Computer Science Engineering</span>
-            </div>
-            <div class="detail-tile">
-              <span class="detail-key">Location</span>
-              <span class="detail-val">Kanpur, Uttar Pradesh, India</span>
-            </div>
-            <div class="detail-tile">
-              <span class="detail-key">Learning Approach</span>
-              <span class="detail-val">Coursework &amp; Project Development</span>
-            </div>
-            <div class="detail-tile">
-              <span class="detail-key">Public Work</span>
-              <span class="detail-val">GitHub Repository</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 3. Education Section -->
-    <section class="section" id="education" aria-labelledby="education-heading">
-      <div class="container">
-        <div class="section-tag-row">
-          <span class="section-tag">02 / Academic</span>
-          <h2 class="section-heading" id="education-heading">Education</h2>
-        </div>
-
-        <div class="education-container">
-          <article class="card glass-card education-card">
-            <div class="education-header">
-              <div class="education-icon-wrap" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+          <div class="about-metrics-column">
+            <div class="card glass-card metric-card">
+              <div class="metric-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
                   <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                   <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                 </svg>
               </div>
-              <div class="education-status-tag">
-                <span class="status-dot"></span>
+              <div class="metric-info">
+                <span class="metric-label">Academic Program</span>
+                <span class="metric-val">B.Tech in CSE</span>
+              </div>
+            </div>
+
+            <div class="card glass-card metric-card">
+              <div class="metric-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="metric-info">
+                <span class="metric-label">Location</span>
+                <span class="metric-val">Kanpur, UP, India</span>
+              </div>
+            </div>
+
+            <div class="card glass-card metric-card">
+              <div class="metric-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+              </div>
+              <div class="metric-info">
+                <span class="metric-label">Curriculum Vitae</span>
+                <span class="metric-val">
+                  <a href="Nikhil_resume.pdf" target="_blank" rel="noopener noreferrer" class="link-cyan">Nikhil_resume.pdf</a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education" aria-labelledby="education-heading">
+      <div class="container">
+        
+        <div class="section-title-wrap">
+          <div class="section-badge">
+            <span class="badge-icon">02</span>
+            <span>Education</span>
+          </div>
+          <h2 class="section-heading" id="education-heading">Academic Path</h2>
+        </div>
+
+        <div class="education-wrap">
+          <article class="card glass-card education-card">
+            <div class="education-card-top">
+              <div class="education-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="education-status-pill">
+                <span class="pulse-dot-cyan"></span>
                 <span>Currently pursuing</span>
               </div>
             </div>
 
-            <div class="education-info">
-              <h3 class="education-title">B.Tech in Computer Science Engineering</h3>
-              <p class="education-place">
+            <div class="education-card-details">
+              <h3 class="education-degree-title">B.Tech in Computer Science Engineering</h3>
+              <p class="education-geo">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
                 <span>Kanpur, Uttar Pradesh, India</span>
               </p>
-              <p class="education-notes">
-                Undergraduate study focused on computer science fundamentals, analytical thinking, and engineering principles.
+              <p class="education-desc">
+                Engaged in foundational coursework encompassing computational theory, algorithmic thinking, and computer engineering principles. Applying academic learning to build software solutions.
               </p>
             </div>
           </article>
         </div>
+
       </div>
     </section>
 
-    <!-- 4. Learning & Interests Section -->
+    <!-- Learning & Interests Section -->
     <section class="section" id="learning" aria-labelledby="learning-heading">
       <div class="container">
-        <div class="section-tag-row">
-          <span class="section-tag">03 / Exploration</span>
-          <h2 class="section-heading" id="learning-heading">Learning &amp; Interests</h2>
-          <p class="section-subtext">
-            Core subjects and areas of technology that I actively explore and study through coursework and independent practice.
+        
+        <div class="section-title-wrap">
+          <div class="section-badge">
+            <span class="badge-icon">03</span>
+            <span>Learning &amp; Interests</span>
+          </div>
+          <h2 class="section-heading" id="learning-heading">Core Areas of Study</h2>
+          <p class="section-subheading">
+            Key areas of computer science that I actively explore and cultivate through university coursework and independent project building.
           </p>
         </div>
 
-        <div class="interests-grid">
-          <!-- Interest 1: Computer Science -->
-          <article class="card glass-card interest-card">
-            <div class="interest-header">
-              <div class="interest-num">01</div>
-              <div class="interest-icon-wrap" aria-hidden="true">
+        <div class="interests-layout">
+          
+          <!-- Card 1 -->
+          <article class="card glass-card interest-tile">
+            <div class="interest-tile-header">
+              <span class="tile-number">01</span>
+              <div class="tile-icon-box" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
                   <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                   <line x1="8" y1="21" x2="16" y2="21"></line>
@@ -318,35 +418,35 @@
                 </svg>
               </div>
             </div>
-            <h3 class="interest-title">Computer Science</h3>
-            <p class="interest-desc">
-              Understanding computing fundamentals, system concepts, and foundational algorithms through university coursework.
+            <h3 class="tile-title">Computer Science</h3>
+            <p class="tile-description">
+              Gaining strong conceptual clarity in fundamental computer science principles, system architecture, and computational methods through university coursework.
             </p>
-            <div class="interest-label">Academic Focus</div>
+            <div class="tile-tag">Academic Discipline</div>
           </article>
 
-          <!-- Interest 2: Problem Solving -->
-          <article class="card glass-card interest-card">
-            <div class="interest-header">
-              <div class="interest-num">02</div>
-              <div class="interest-icon-wrap" aria-hidden="true">
+          <!-- Card 2 -->
+          <article class="card glass-card interest-tile">
+            <div class="interest-tile-header">
+              <span class="tile-number">02</span>
+              <div class="tile-icon-box" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
                   <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
                 </svg>
               </div>
             </div>
-            <h3 class="interest-title">Problem Solving</h3>
-            <p class="interest-desc">
-              Practicing structured analytical reasoning, breaking down complex requirements, and designing step-by-step logic.
+            <h3 class="tile-title">Problem Solving</h3>
+            <p class="tile-description">
+              Cultivating an analytical mindset to deconstruct complex technical challenges, formulate step-by-step logic, and write clean, structured code.
             </p>
-            <div class="interest-label">Core Practice</div>
+            <div class="tile-tag">Core Methodology</div>
           </article>
 
-          <!-- Interest 3: Web Development -->
-          <article class="card glass-card interest-card">
-            <div class="interest-header">
-              <div class="interest-num">03</div>
-              <div class="interest-icon-wrap" aria-hidden="true">
+          <!-- Card 3 -->
+          <article class="card glass-card interest-tile">
+            <div class="interest-tile-header">
+              <span class="tile-number">03</span>
+              <div class="tile-icon-box" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="2" y1="12" x2="22" y2="12"></line>
@@ -354,43 +454,53 @@
                 </svg>
               </div>
             </div>
-            <h3 class="interest-title">Web Development</h3>
-            <p class="interest-desc">
-              Building accessible, responsive user interfaces and gaining practical experience with modern web architecture.
+            <h3 class="tile-title">Web Development</h3>
+            <p class="tile-description">
+              Creating responsive, accessible user interfaces and exploring modern web standards, UI structure, and client-side interactions through projects.
             </p>
-            <div class="interest-label">Hands-on Building</div>
+            <div class="tile-tag">Hands-on Practice</div>
           </article>
+
         </div>
+
       </div>
     </section>
 
-    <!-- 5. Featured Project Section -->
+    <!-- Featured Project Section -->
     <section class="section" id="projects" aria-labelledby="projects-heading">
       <div class="container">
-        <div class="section-tag-row">
-          <span class="section-tag">04 / Development</span>
-          <h2 class="section-heading" id="projects-heading">Featured Project</h2>
+        
+        <div class="section-title-wrap">
+          <div class="section-badge">
+            <span class="badge-icon">04</span>
+            <span>Featured Project</span>
+          </div>
+          <h2 class="section-heading" id="projects-heading">Project Showcase</h2>
         </div>
 
-        <div class="featured-project-container">
+        <div class="project-showcase-box">
           <article class="card glass-card project-card">
-            <div class="project-card-header">
-              <div class="project-brand-badge">
-                <img src="assets/pn-neet-diw-logo.jpg" alt="PN-Neet-Diw Project Logo" class="project-logo-thumb" width="44" height="44">
+            
+            <div class="project-header">
+              <div class="project-identity">
+                <img src="assets/pn-neet-diw-logo.jpg" alt="PN-Neet-Diw Project Logo" class="project-logo" width="48" height="48">
                 <div>
-                  <span class="project-tag-pill">Public Repository</span>
-                  <div class="project-slug">nikhildiwakar666-a11y / PN-Neet-Diw</div>
+                  <span class="project-badge">Public Repository</span>
+                  <div class="project-path">nikhildiwakar666-a11y / PN-Neet-Diw</div>
                 </div>
               </div>
-              <span class="project-status-dot">Active Project</span>
+              <div class="project-live-indicator">
+                <span class="pulse-cyan"></span>
+                <span>Active Development</span>
+              </div>
             </div>
 
-            <div class="project-card-body">
-              <h3 class="project-name">
+            <div class="project-content">
+              <h3 class="project-title">
                 <a href="https://github.com/nikhildiwakar666-a11y/PN-Neet-Diw" 
                    target="_blank" 
                    rel="noopener noreferrer" 
-                   class="project-heading-link">
+                   class="project-link-heading">
                   PN-Neet-Diw
                   <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -400,53 +510,66 @@
                 </a>
               </h3>
 
-              <p class="project-quote">
+              <p class="project-summary">
                 “A project I’m building and improving. Visit the repository to explore its current code and features.”
               </p>
             </div>
 
-            <div class="project-card-actions">
+            <div class="project-actions">
               <a href="https://github.com/nikhildiwakar666-a11y/PN-Neet-Diw" 
                  target="_blank" 
                  rel="noopener noreferrer" 
                  class="btn btn-primary"
                  id="view-source-github-btn">
                 <span>View Source on GitHub</span>
-                <svg class="icon btn-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true">
+                <svg class="icon btn-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true">
                   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                   <polyline points="15 3 21 3 21 9"></polyline>
                   <line x1="10" y1="14" x2="21" y2="3"></line>
                 </svg>
               </a>
+
+              <a href="https://github.com/nikhildiwakar666-a11y" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn btn-secondary">
+                <span>More on GitHub</span>
+              </a>
             </div>
+
           </article>
         </div>
+
       </div>
     </section>
 
-    <!-- 6. Contact Section -->
+    <!-- Contact Section -->
     <section class="section" id="contact" aria-labelledby="contact-heading">
       <div class="container">
-        <div class="section-tag-row">
-          <span class="section-tag">05 / Communication</span>
+        
+        <div class="section-title-wrap">
+          <div class="section-badge">
+            <span class="badge-icon">05</span>
+            <span>Get in Touch</span>
+          </div>
           <h2 class="section-heading" id="contact-heading">Let’s connect</h2>
         </div>
 
         <div class="card glass-card contact-card">
-          <div class="contact-box-inner">
-            <div class="contact-accent-icon" aria-hidden="true">
+          <div class="contact-inner">
+            <div class="contact-icon-bubble" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="28" height="28">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
               </svg>
             </div>
 
-            <h3 class="contact-prompt-title">Explore My Work &amp; Connect</h3>
+            <h3 class="contact-title">Connect &amp; Collaborate</h3>
 
-            <p class="contact-text">
-              I welcome connections with fellow computer science students, developers, and collaborators. You are invited to view my work, review my repositories, or connect directly through my GitHub profile.
+            <p class="contact-intro">
+              I welcome connections with fellow computer science students, developers, and educators. Feel free to view my projects, follow my latest code commits, or reach out directly on GitHub.
             </p>
 
-            <div class="contact-button-row">
+            <div class="contact-cta">
               <a href="https://github.com/nikhildiwakar666-a11y" 
                  target="_blank" 
                  rel="noopener noreferrer" 
@@ -460,40 +583,46 @@
             </div>
 
             <!-- Clearly labeled optional email placeholder -->
-            <div class="contact-optional-placeholder">
-              <span class="placeholder-label">Email placeholder:</span>
-              <code class="placeholder-value">[Add your email]</code>
+            <div class="contact-email-placeholder">
+              <span class="placeholder-caption">Email placeholder:</span>
+              <code class="placeholder-tag">[Add your email]</code>
             </div>
 
-            <div class="contact-location-tag">
+            <div class="contact-geo-tag">
               <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                 <circle cx="12" cy="10" r="3"></circle>
               </svg>
-              <span>Based in Kanpur, Uttar Pradesh, India</span>
+              <span>Located in Kanpur, Uttar Pradesh, India</span>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
   </main>
 
-  <!-- 7. Footer -->
+  <!-- Site Footer -->
   <footer class="site-footer">
-    <div class="container footer-content">
-      <div class="footer-left">
-        <a href="#hero" class="brand-wordmark">
-          <span class="brand-monogram">ND</span>
-          <span class="brand-name">Nikhil Diwakar</span>
+    <div class="container footer-grid">
+      
+      <div class="footer-brand-col">
+        <a href="#hero" class="brand-link">
+          <div class="brand-monogram"><span>ND</span></div>
+          <div class="brand-info">
+            <span class="brand-title">Nikhil Diwakar</span>
+            <span class="brand-subtitle">Computer Science Engineering Student</span>
+          </div>
         </a>
-        <p class="footer-meta">
-          B.Tech Computer Science Engineering student &bull; Kanpur, Uttar Pradesh, India
+        <p class="footer-location-note">
+          Based in Kanpur, Uttar Pradesh, India
         </p>
       </div>
 
-      <div class="footer-center">
-        <ul class="footer-nav-list" aria-label="Footer links">
+      <div class="footer-nav-col">
+        <span class="footer-heading">Navigation</span>
+        <ul class="footer-list">
           <li><a href="#about">About</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#learning">Learning</a></li>
@@ -502,31 +631,39 @@
         </ul>
       </div>
 
-      <div class="footer-right">
-        <a href="https://github.com/nikhildiwakar666-a11y" 
-           target="_blank" 
-           rel="noopener noreferrer" 
-           class="footer-profile-link"
-           aria-label="GitHub Profile (@nikhildiwakar666-a11y)">
-          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
-            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-          </svg>
-          <span>github.com/nikhildiwakar666-a11y</span>
-        </a>
+      <div class="footer-action-col">
+        <span class="footer-heading">Resources</span>
+        <div class="footer-links-group">
+          <a href="Nikhil_resume.pdf" target="_blank" rel="noopener noreferrer" class="footer-pill-link">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Resume (PDF)</span>
+          </a>
 
-        <a href="#hero" class="back-to-top" aria-label="Back to top">
-          <span>Back to top</span>
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true">
-            <polyline points="18 15 12 9 6 15"></polyline>
-          </svg>
-        </a>
+          <a href="https://github.com/nikhildiwakar666-a11y" target="_blank" rel="noopener noreferrer" class="footer-pill-link">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>GitHub Profile</span>
+          </a>
+        </div>
       </div>
+
     </div>
 
     <div class="container footer-bottom">
       <p class="copyright">
         &copy; <span id="currentYear">2026</span> Nikhil Diwakar. All rights reserved.
       </p>
+      <a href="#hero" class="back-to-top" aria-label="Back to top">
+        <span>Back to top</span>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </a>
     </div>
   </footer>
 
