@@ -11,9 +11,19 @@ Designed for **Nikhil Diwakar**, a B.Tech Computer Science Engineering student b
 - **Name:** Nikhil Diwakar
 - **Education:** B.Tech in Computer Science Engineering (Currently pursuing)
 - **Location:** Kanpur, Uttar Pradesh, India
+- **LinkedIn Profile:** [https://www.linkedin.com/in/nikhil-diwakar-4828482a9](https://www.linkedin.com/in/nikhil-diwakar-4828482a9)
 - **GitHub Profile:** [https://github.com/nikhildiwakar666-a11y](https://github.com/nikhildiwakar666-a11y)
 - **Featured Project:** [PN-Neet-Diw](https://github.com/nikhildiwakar666-a11y/PN-Neet-Diw)
 - **Project Repository:** `https://github.com/nikhildiwakar666-a11y/PN-Neet-Diw`
+- **Verified Certificates:**
+  - *Java Course - Mastering the Fundamentals* — Scaler Topics (25 August 2026)
+  - *YUVA AI For All* — IndiaAI through TCS iON (25 August 2026)
+  - *AI - Data Engineering Analyst* — NASSCOM & Skill India Digital Hub (19 August 2026)
+- **Verified Achievements & Activities:**
+  - School Long Jump (2nd Place)
+  - School Race (3rd Place)
+  - Marathon Race (Participant)
+  - College Brainteaser Event (Participant)
 
 > **Note:** Strictly adheres to verified details. No unconfirmed colleges, study years, contact emails, phone numbers, or technical claims are fabricated.
 
@@ -26,7 +36,8 @@ Designed for **Nikhil Diwakar**, a B.Tech Computer Science Engineering student b
 - **Strict Color Rules:** Completely free of orange, red, brown, or warm colors.
 - **Hero Presentation:** Modern asymmetric split-grid with developer profile terminal component.
 - **Typography:** Refined typography using *Plus Jakarta Sans* and *JetBrains Mono*.
-- **Resume Integration:** Dedicated "Download Resume" action button linking directly to `Nikhil_resume.pdf`.
+- **Resume & LinkedIn:** Dedicated "Download Resume" action button and verified LinkedIn button.
+- **Certificates & Achievements:** Dedicated cards with thumbnail view and PDF open/download actions.
 - **Project Showcase:** Features verified project logo (`assets/pn-neet-diw-logo.jpg`) with public repository badge.
 - **Accessibility:**
   - Semantic HTML5 structure (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`)
@@ -42,14 +53,17 @@ Designed for **Nikhil Diwakar**, a B.Tech Computer Science Engineering student b
 ```text
 portfolio/
 ├── assets/
-│   └── pn-neet-diw-logo.jpg # Verified PN-Neet-Diw project logo
-├── Nikhil_resume.pdf        # Resume PDF file
-├── index.html               # Semantic HTML5 markup
-├── styles.css               # Design system with dark grid & orange-red accent
-├── script.js                # Accessible mobile drawer & scroll-spy
-├── server.js                # Zero-dependency local Node.js HTTP server
-├── package.json             # NPM start command
-└── README.md                # Documentation and deployment guide
+│   ├── pn-neet-diw-logo.jpg                                # Verified PN-Neet-Diw project logo
+│   ├── cirtificate.jpeg                                    # Scaler Java Course certificate
+│   ├── Nikhil_Diwakar_41325.pdf                            # IndiaAI TCS iON certificate
+│   └── certificate_30abc684-c033-40a9-836b-caa3d4b7be33.pdf # NASSCOM AI certificate
+├── Nikhil_resume.pdf                                       # Resume PDF file
+├── index.html                                              # Semantic HTML5 markup
+├── styles.css                                              # Design system with deep navy & cyan accents
+├── script.js                                               # Accessible mobile drawer & scroll-spy
+├── server.js                                               # Zero-dependency local Node.js HTTP server
+├── package.json                                            # NPM start command
+└── README.md                                               # Documentation and deployment guide
 ```
 
 ---
