@@ -21,16 +21,17 @@ Designed for **Nikhil Diwakar**, a B.Tech Computer Science Engineering student b
 
 ## 🎨 Visual & Design System
 
-- **Dark Theme:** Deep navy / charcoal background (`#090d16`), soft sky blue accents (`#38bdf8`), and restrained mint highlights (`#2dd4bf`).
+- **Dark Theme:** Dark charcoal / near-black background (`#090b0e`), technical grid background overlay, and restrained modern orange-red accent (`#ff4d2e`).
+- **Abstract Wireframe Hero:** Code-based SVG wireframe geometry illustration with coordinate rings, glowing nodes, and subtle rotational ambient movement.
 - **Typography:** Refined typography using *Plus Jakarta Sans* and *JetBrains Mono*.
-- **Card Design:** Translucent backdrop blur, hairline borders, and subtle lift hover states.
+- **Card Design:** Glass-style cards with backdrop blur, fine borders, and smooth lift hover effects.
+- **Project Showcase:** Features project branding badge with repository logo (`assets/pn-neet-diw-logo.jpg`).
 - **Accessibility:**
   - Semantic HTML5 structure (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`)
   - Skip-to-content keyboard link
-  - Clear `:focus-visible` outline rings
-  - High-contrast colors conforming to WCAG AA/AAA guidelines
+  - Clear `:focus-visible` outline rings with accessible contrast
   - Supports `prefers-reduced-motion` for motion-sensitive users
-  - Responsive mobile drawer navigation with full keyboard (Escape key) and ARIA attributes
+  - Responsive mobile drawer navigation with ARIA attributes and keyboard Escape key dismissal
 
 ---
 
@@ -38,10 +39,14 @@ Designed for **Nikhil Diwakar**, a B.Tech Computer Science Engineering student b
 
 ```text
 portfolio/
-├── index.html       # Semantic HTML5 markup
-├── styles.css       # Custom CSS design system with CSS custom properties
-├── script.js        # Accessible navigation drawer, active scroll spy, dynamic year
-└── README.md        # Documentation and deployment guide
+├── assets/
+│   └── pn-neet-diw-logo.jpg # Verified PN-Neet-Diw project logo
+├── index.html               # Semantic HTML5 markup
+├── styles.css               # Design system with dark grid & orange-red accent
+├── script.js                # Accessible mobile drawer & scroll-spy
+├── server.js                # Zero-dependency local Node.js HTTP server
+├── package.json             # NPM start command
+└── README.md                # Documentation and deployment guide
 ```
 
 ---
