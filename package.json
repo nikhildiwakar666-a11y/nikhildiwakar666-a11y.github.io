@@ -1,0 +1,17 @@
+{
+  "name": "nikhil-diwakar-portfolio",
+  "version": "1.0.0",
+  "description": "Personal developer portfolio website for Nikhil Diwakar",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "computer-science",
+    "btech"
+  ],
+  "author": "Nikhil Diwakar",
+  "license": "MIT"
+}
