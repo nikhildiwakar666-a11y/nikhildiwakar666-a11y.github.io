@@ -1,7 +1,8 @@
 /* ==========================================================================
-   Design System: Luxury Black, White & Silver/Gray Theme
+   Design System: Luxury Black, White & Silver Theme (Aceternity UI Components)
    - Deep obsidian and charcoal black foundation
-   - Polished silver and chrome accents
+   - Aceternity UI Spotlight, Background Beams & Card Hover Spotlight
+   - Aceternity Moving Border & Shimmer buttons
    - Pure crisp white headings and high-contrast typography
    - Subtle hairline borders, refined shadows, and delicate glows
    - Strictly NO extra accent colors (monochrome: black, white, silver/gray)
@@ -133,7 +134,57 @@ body {
   overflow-x: hidden;
 }
 
-/* Ambient Soft Monochrome Glow Elements (Delicate studio lighting) */
+/* ==========================================================================
+   Aceternity UI: Spotlight Component
+   ========================================================================== */
+.aceternity-spotlight-wrapper {
+  position: absolute;
+  top: -200px;
+  left: -150px;
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: visible;
+}
+
+.aceternity-spotlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 135%;
+  height: auto;
+  max-height: 950px;
+  transform: translate(-12%, -8%);
+  animation: spotlightFadeIn 1.4s ease-out forwards;
+}
+
+@keyframes spotlightFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-15%, -12%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-12%, -8%) scale(1);
+  }
+}
+
+/* ==========================================================================
+   Aceternity UI: Background Beams Canvas
+   ========================================================================== */
+.aceternity-beams-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.7;
+}
+
+/* Ambient Soft Monochrome Studio Lighting */
 .ambient-glow {
   position: absolute;
   pointer-events: none;
@@ -231,7 +282,9 @@ a {
   margin-bottom: var(--space-2xl);
 }
 
+/* Aceternity UI: Shimmer Section Badge */
 .section-badge {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -242,10 +295,28 @@ a {
   text-transform: uppercase;
   color: var(--silver-300);
   margin-bottom: var(--space-xs);
-  padding: 0.25rem 0.75rem;
+  padding: 0.28rem 0.8rem;
   background-color: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border-silver);
   border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.section-badge::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.22),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: shimmerSlide 4.5s infinite;
 }
 
 .badge-icon {
@@ -280,9 +351,10 @@ a {
 }
 
 /* ==========================================================================
-   Refined Silver Glass Cards
+   Aceternity UI: Card Hover Spotlight Effect
    ========================================================================== */
 .glass-card {
+  position: relative;
   background-color: var(--bg-card);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -290,19 +362,47 @@ a {
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
   box-shadow: var(--shadow-card);
+  overflow: hidden;
   transition: border-color var(--transition-normal),
               transform var(--transition-normal),
               box-shadow var(--transition-normal);
 }
 
+/* Dynamic Radial Cursor Spotlight */
+.glass-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    480px circle at var(--mouse-x, -500px) var(--mouse-y, -500px),
+    rgba(255, 255, 255, 0.08),
+    transparent 55%
+  );
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 1;
+}
+
+.glass-card:hover::before {
+  opacity: 1;
+}
+
+/* Ensure contents stay on top of the spotlight glow */
+.glass-card > * {
+  position: relative;
+  z-index: 2;
+}
+
 .glass-card:hover {
   border-color: var(--border-silver);
-  box-shadow: var(--shadow-card), 0 0 24px rgba(255, 255, 255, 0.06);
+  box-shadow: var(--shadow-card), 0 0 28px rgba(255, 255, 255, 0.07);
   transform: translateY(-2px);
 }
 
 /* ==========================================================================
-   Buttons (Black, White, Silver/Chrome Only)
+   Aceternity UI: Buttons (Moving Border & Shimmer)
    ========================================================================== */
 .btn {
   display: inline-flex;
@@ -319,6 +419,106 @@ a {
   transition: all var(--transition-fast);
   white-space: nowrap;
   line-height: 1.25;
+}
+
+/* Aceternity UI: Moving Border Button */
+.btn-moving-border {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 15px rgba(255, 255, 255, 0.06);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.btn-moving-border:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8), 0 0 24px rgba(255, 255, 255, 0.18);
+}
+
+.moving-border-tracer {
+  position: absolute;
+  inset: -120%;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    transparent 0deg,
+    transparent 280deg,
+    rgba(255, 255, 255, 0.35) 310deg,
+    #ffffff 340deg,
+    #94a3b8 360deg
+  );
+  animation: movingBorderSpin 4s linear infinite;
+}
+
+@keyframes movingBorderSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.moving-border-inner {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.75rem 1.5rem;
+  background: #090a0e;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: calc(var(--radius-md) - 1.5px);
+  transition: background 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-moving-border:hover .moving-border-inner {
+  background: #13141a;
+}
+
+/* Aceternity UI: Shimmer Button */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-silver);
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.btn-shimmer .shimmer-slide {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: shimmerSlide 3.5s infinite;
+}
+
+@keyframes shimmerSlide {
+  0% { left: -100%; }
+  40%, 100% { left: 200%; }
+}
+
+.btn-shimmer:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.12);
 }
 
 .btn-primary {
@@ -422,12 +622,13 @@ a {
   transition: transform var(--transition-fast);
 }
 
-.btn:hover .btn-arrow-icon {
+.btn:hover .btn-arrow-icon,
+.btn-moving-border:hover .btn-arrow-icon {
   transform: translateX(3px);
 }
 
 /* ==========================================================================
-   Header & Sticky Navigation
+   Header & Sticky Navigation (Floating Aceternity Feel)
    ========================================================================== */
 .site-header {
   position: sticky;
@@ -444,6 +645,7 @@ a {
 .site-header.scrolled {
   border-bottom-color: var(--border-medium);
   background-color: rgba(7, 8, 10, 0.95);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.7);
 }
 
 .header-container {
@@ -659,10 +861,12 @@ a {
 }
 
 /* ==========================================================================
-   Hero Section Layout
+   Hero Section Layout (with Aceternity Spotlight & Beams)
    ========================================================================== */
 .hero-section {
   border-top: none;
+  position: relative;
+  overflow: hidden;
   padding-top: clamp(3.5rem, 7vw, 6rem);
   padding-bottom: clamp(3.5rem, 7vw, 6rem);
 }
@@ -672,6 +876,8 @@ a {
   grid-template-columns: 1.15fr 0.85fr;
   gap: 2.5rem;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-badges {
@@ -683,6 +889,7 @@ a {
 }
 
 .badge-status {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -693,6 +900,7 @@ a {
   font-size: 0.8125rem;
   font-weight: 600;
   color: var(--text-white);
+  overflow: hidden;
 }
 
 .status-indicator-dot {
@@ -1776,7 +1984,8 @@ a {
     width: 100%;
   }
 
-  .hero-cta-group .btn {
+  .hero-cta-group .btn,
+  .hero-cta-group .btn-moving-border {
     width: 100%;
   }
 
@@ -1816,5 +2025,12 @@ a {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+
+  .moving-border-tracer,
+  .btn-shimmer .shimmer-slide,
+  .section-badge::after,
+  .aceternity-spotlight {
+    animation: none !important;
   }
 }
