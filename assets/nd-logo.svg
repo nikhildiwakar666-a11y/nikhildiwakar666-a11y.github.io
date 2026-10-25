@@ -1,0 +1,18 @@
+<svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="ND Monogram">
+  <defs>
+    <linearGradient id="nd-silver-sheen" x1="12" y1="12" x2="36" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#E2E8F0"/>
+      <stop offset="70%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="nd-silver-border" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.45)"/>
+      <stop offset="50%" stop-color="rgba(148, 163, 184, 0.2)"/>
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.35)"/>
+    </linearGradient>
+  </defs>
+  <rect x="1.5" y="1.5" width="41" height="41" rx="10" fill="#0d0e12" stroke="url(#nd-silver-border)" stroke-width="1.5"/>
+  <path d="M13 32V12L24 32V12M24 12H28.5C32.6421 12 36 15.3579 36 19.5V24.5C36 28.6421 32.6421 32 28.5 32H24" 
+        stroke="url(#nd-silver-sheen)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
